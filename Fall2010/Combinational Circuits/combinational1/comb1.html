@@ -1,0 +1,631 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Basic Gates</title>
+</head>
+
+<body>
+
+<p><span style="mso-bidi-font-size: 10.0pt"><b><font size="5" face="Copperplate Gothic Bold">
+Combinational Logic Functions and Expression</font></b></span></p>
+
+<p><font size="5">Logic Variables and Logic Functions</font></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">The circuits that process
+    discrete or logic signals are called <i>logic circuits</i> or <i>digital
+    circuits</i></font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">a logic variable =&gt; a binary
+    variable =&gt; two possible values:&nbsp; '<font face="Courier New">0</font>' == FALSE;&nbsp;&nbsp;
+    '<font face="Courier New">1</font>' ==
+    TRUE</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">A <i>logic function</i>
+    specifies the functional dependence between its variables.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">A <i>truth table</i> is the most
+    natural way of describing a combinational logic function (There are many
+    other ways.).</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">It is a table that lists all the
+    combinations of input variables and a complete set of the function values
+    corresponding to these input combinations.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">The truth table of 16 possible
+    2-variable (and one-variable) logic functions</font></li>
+</ul>
+<p style="line-height: 150%"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Times;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:395.25pt;
+ height:93.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="comb1.gif" v:shapes="_x0000_i1025" width="527" height="125"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1093897679">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">The truth table is the simplest
+    and accurate method of defining a logic function.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">If two functions have the same
+    truth table, they must be identical.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">To specify a combinational logic
+    function using logic expressions or logic circuits requires decomposition
+    and expression of a logic function in terms of predefined basic logic
+    operations.</font></li>
+</ul>
+<p>&nbsp;</p>
+<p style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0"><font size="5">Primitive Combinational Functions and Basic Logic Operations&nbsp;</font></p>
+
+<p style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0"><font size="5">
+(Basic Logic Gates)</font></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">Truth
+    tables for defining 16 primitive logical functions and basic logical
+    operations</font></span></li>
+</ul>
+<p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:22.0pt .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 328.0pt 346.0pt 373.0pt 400.0pt 436.0pt 463.0pt"><span style="mso-spacerun: yes">&nbsp;
+</span>Input<span style="mso-tab-count:8">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>Output functions</p>
+<p class="MsoNormal" style="margin-right:-9.0pt;text-align:justify;tab-stops:
+22.0pt .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt 6.5in"><u><span style="mso-spacerun: yes">&nbsp;</span>A<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;
+</span>B<span style="mso-tab-count:1">&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>F0<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>F1<span style="mso-spacerun:
+yes">&nbsp;&nbsp; </span>F2<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>F3<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>F4<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>F5<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>F6<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>F7<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>F8<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;
+</span>F9<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>F10<span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>F11<span style="mso-spacerun: yes">&nbsp; </span>F12<span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>F13<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp; </span>F14<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>F15</u></p>
+<p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:22.0pt .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 2.5in 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt 441.0pt 6.5in"><span style="mso-spacerun: yes">&nbsp;</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1</p>
+<p class="MsoNormal" style="text-align:justify;tab-stops:22.0pt .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 2.5in 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt 441.0pt 6.5in"><span style="mso-spacerun: yes">&nbsp;</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1</p>
+<p class="MsoNormal" style="text-align:justify;tab-stops:22.0pt .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 2.5in 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt 441.0pt 6.5in"><span style="mso-spacerun: yes">&nbsp;</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1</p>
+<p class="MsoNormal" style="text-align:justify;tab-stops:22.0pt .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 2.5in 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt 441.0pt 6.5in"><span style="mso-spacerun: yes">&nbsp;</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>1<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>0<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>1</p>
+      <p class="MsoNormal" style="margin-right:-9.0pt;text-align:justify;tab-stops:
+13.0pt .25in .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 2.5in 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt">Expression<span style="mso-spacerun: yes">&nbsp;
+</span>0<span style="mso-spacerun: yes">&nbsp;&nbsp; </span>AB<span style="mso-spacerun: yes">&nbsp;
+</span><span style="mso-text-raise:
+-1.0pt"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:18.75pt;
+ height:12.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.2.gif" v:shapes="_x0000_i1025" width="25" height="17"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1093898579">
+ </o:OLEObject>
+</xml><![endif]-->
+<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;</span>A<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span><span style="mso-text-raise:-1.0pt"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:18pt;height:12.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image003.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.3.gif" v:shapes="_x0000_i1026" width="24" height="17"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1026"
+  DrawAspect="Content" ObjectID="_1093898580">
+ </o:OLEObject>
+</xml><![endif]--> <span style="mso-tab-count:1">&nbsp;</span>B<span style="mso-spacerun: yes">&nbsp;
+</span><span style="mso-text-raise:-2.0pt"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1027" type="#_x0000_t75" style='width:32.25pt;height:12pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image005.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.4.gif" v:shapes="_x0000_i1027" width="43" height="16"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1027"
+  DrawAspect="Content" ObjectID="_1093898581">
+ </o:OLEObject>
+</xml><![endif]-->
+      A+B <span style="mso-text-raise:-1.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:30pt;height:12.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image007.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.5.gif" v:shapes="_x0000_i1028" width="40" height="17"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1028"
+  DrawAspect="Content" ObjectID="_1093898582">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-text-raise:-2.0pt"><img src="comb1.6.gif" v:shapes="_x0000_i1029" width="43" height="19"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1029"
+  DrawAspect="Content" ObjectID="_1093898583">
+ </o:OLEObject>
+</xml><![endif]--><span style="mso-text-raise:-1.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1030"
+ type="#_x0000_t75" style='width:11.25pt;height:12.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image011.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.7.gif" v:shapes="_x0000_i1030" width="15" height="17"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1030"
+  DrawAspect="Content" ObjectID="_1093898584">
+ </o:OLEObject>
+</xml><![endif]-->
+<span style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-text-raise:-1.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1031"
+ type="#_x0000_t75" style='width:18pt;height:15.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image013.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.8.gif" v:shapes="_x0000_i1031" width="24" height="21"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1031"
+  DrawAspect="Content" ObjectID="_1093898585">
+ </o:OLEObject>
+</xml><![endif]-->
+<span style="mso-spacerun: yes">&nbsp;&nbsp;</span><span style="mso-text-raise:-1.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1032"
+ type="#_x0000_t75" style='width:11.25pt;height:12.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image015.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.9.gif" v:shapes="_x0000_i1032" width="15" height="17"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1032"
+  DrawAspect="Content" ObjectID="_1093898586">
+ </o:OLEObject>
+</xml><![endif]-->
+<span style="mso-spacerun: yes">&nbsp;</span><span style="mso-text-raise:-1.0pt">
+<img src="comb1.10.gif" v:shapes="_x0000_i1033" width="25" height="21"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1033"
+  DrawAspect="Content" ObjectID="_1093898587">
+ </o:OLEObject>
+</xml><![endif]-->
+<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-text-raise:-1.0pt"><!--[if gte vml 1]><v:shape id="_x0000_i1034"
+ type="#_x0000_t75" style='width:18pt;height:12.75pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image019.wmz"
+  o:title=""/>
+</v:shape><![endif]--><img src="comb1.11.gif" v:shapes="_x0000_i1034" width="24" height="17"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1034"
+  DrawAspect="Content" ObjectID="_1093898588">
+ </o:OLEObject>
+</xml><![endif]-->
+<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>1</p>
+<p class="MsoNormal" style="margin-right:-9.0pt;text-align:justify;tab-stops:
+13.0pt .25in .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt"><span style="font-size:7.0pt">&nbsp;<o:p>
+</span>Operation<span style="mso-tab-count:1">&nbsp;&nbsp;
+</span><span style="font-size:10.0pt">F</span><span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span><span style="font-size:10.0pt">AND<span style="mso-tab-count:4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>XOR<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>OR<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;
+</span>NOR<span style="mso-spacerun: yes">&nbsp; </span>XNOR<span style="mso-spacerun: yes">&nbsp;&nbsp;
+</span>NOT<span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>NOT<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="mso-spacerun: yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span>NAND<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>T<o:p>
+</o:p>
+</span></p>
+<p class="MsoNormal" style="text-align:justify;tab-stops:13.0pt .25in .5in .75in 76.0pt 99.0pt 1.75in 153.0pt 175.0pt 202.0pt 3.25in 265.0pt 292.0pt 319.0pt 346.0pt 373.0pt 400.0pt 436.0pt"><span style="font-size:7.0pt">&nbsp;<o:p>
+</span>
+<span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;font-family:Times;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;;
+mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shape
+ id="_x0000_i1035" type="#_x0000_t75" style='width:474.75pt;height:26.25pt'
+ o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image021.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.12.gif" v:shapes="_x0000_i1035" width="633" height="35"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1035"
+  DrawAspect="Content" ObjectID="_1093898590">
+ </o:OLEObject>
+</xml><![endif]-->
+</span>
+      </p>
+<p>&nbsp;
+
+<ul>
+  <li><font size="4">NOT gates (Inverters)&nbsp;-- <a href="http://www-s.ti.com/sc/ds/sn7404.pdf">SN7404</a></font></li>
+</ul>
+
+<p>&nbsp;&nbsp; <font size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" src="wpe13353.jpg" width="144" height="200">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe13358.jpg" width="121" height="230">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font size="4">X= A'&nbsp; [function F12]&nbsp;&nbsp;&nbsp;
+or&nbsp;&nbsp;&nbsp; X =
+B'&nbsp; [function F10]</font></p>
+
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font size="6">&nbsp;&nbsp;&nbsp;&nbsp;</font><font size="4">&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="4">when V<sub>in</sub>
+= 0 volt, V<sub>out</sub> = V<sub>cc</sub> (+5 volts)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&quot;open circuit&quot;</font></p>
+
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+when V<sub>in</sub>
+= +5 volts, V<sub>out</sub> = GND = 0 volt&nbsp;&nbsp;&nbsp;
+&quot;close circuit&quot;&nbsp;</font></p>
+
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+
+<ul>
+  <li><font size="4">NAND gates -- <a href="http://www-s.ti.com/sc/ds/sn7400.pdf">SN7400</a></font></li>
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" src="wpe13363.jpg" width="171" height="250">&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe13368.jpg" width="145" height="240"></font></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><font size="4">X = (AB)'&nbsp;&nbsp;
+[function F14]</font></p>
+
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"> <font size="6"><b>&nbsp; </b></font><font size="4">&nbsp;&nbsp;&nbsp;</font><font size="6"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></font><font size="4">when V<sub>1</sub>
+= 0&nbsp; V<sub>2</sub>
+= 0, V<sub>out</sub> = V<sub>cc</sub> (+5 volts)&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>when V<sub>1</sub>
+= 0&nbsp; V<sub>2</sub>
+= +5 , V<sub>out</sub> = V<sub>cc</sub> (+5 volts)&nbsp;&nbsp;&nbsp;</font></p>
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>when V<sub>1</sub>
+= +5&nbsp; V<sub>2</sub>
+= 0, V<sub>out</sub> = V<sub>cc</sub> (+5 volts)&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>when V<sub>1</sub>
+= +5&nbsp; V<sub>2</sub>
+= +5, V<sub>out</sub> = GND (0 volt)&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p>&nbsp;</p>
+
+<ul>
+  <li><font size="4">NOR gates -- <a href="http://www-s.ti.com/sc/ds/sn7423.pdf">SN7423</a></font></li>
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="6">&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;
+<font size="6"><img border="0" src="wpe13373.jpg" width="230" height="230">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe13378.jpg" width="153" height="250">&nbsp;&nbsp;&nbsp;&nbsp;
+</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+X = (A + B)'&nbsp; [function F8]</font>
+
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp; <font size="6"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></font><font size="4">when V<sub>1</sub>
+= 0&nbsp; V<sub>2</sub>
+= 0, V<sub>out</sub> = V<sub>cc</sub> (+5 volts)&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp; <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>when V<sub>1</sub>
+= 0&nbsp; V<sub>2</sub>
+= +5 , V<sub>out</sub> = GND (0 volt)&nbsp;&nbsp;&nbsp;</font></p>
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp; <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>when V<sub>1</sub>
+= +5&nbsp; V<sub>2</sub>
+= 0, V<sub>out</sub> = GND (0 volt)&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p style="line-height: 150%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp; <b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b>when V<sub>1</sub>
+= +5&nbsp; V<sub>2</sub>
+= +5, V<sub>out</sub> = GND (0 volt)&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<p>&nbsp;</p>
+
+<ul>
+  <li><font size="4">AND gates -- <a href="http://www-s.ti.com/sc/ds/cd74hct08.pdf">CD74HC08</a></font></li>
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe13383.jpg" width="151" height="250"></p>
+
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font><font size="4">X = AB</font></p>
+
+<ul>
+  <li><font size="4">OR gates -- <a href="http://www-s.ti.com/sc/ds/sn7432.pdf">SN74S32</a></font></li>
+</ul>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe13388.jpg" width="134" height="250"></p>
+
+<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font>
+<font size="4">X = A + B</font>
+<p>&nbsp;
+
+<ul>
+  <li><font size="4">XOR gates -- <a href="http://www-s.ti.com/sc/ds/cd4070b.pdf">CD4070B</a></font>
+  </li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;<img border="0" src="wpe13393.jpg" width="100" height="54">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<div align="left">
+  <table border="1" cellspacing="3" width="22%" height="144">
+    <tr>
+      <td width="47%" align="center" height="21"><font size="4">A&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        B</font></td>
+      <td width="20%" align="center" height="21"><font size="4">X</font></td>
+    </tr>
+    <tr>
+      <td width="47%" align="center" height="21"><font size="4">0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0</font></td>
+      <td width="20%" align="center" height="21"><font size="4">0</font></td>
+    </tr>
+    <tr>
+      <td width="47%" align="center" height="21"><font size="4">0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1</font></td>
+      <td width="20%" align="center" height="21"><font size="4">1</font></td>
+    </tr>
+    <tr>
+      <td width="47%" align="center" height="20"><font size="4">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0</font></td>
+      <td width="20%" align="center" height="20"><font size="4">1</font></td>
+    </tr>
+    <tr>
+      <td width="47%" align="center" height="21"><font size="4">1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1</font></td>
+      <td width="20%" align="center" height="21"><font size="4">0</font></td>
+    </tr>
+  </table>
+</div>
+<p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font><font size="4">X = </font><font size="4"> A&nbsp; XOR&nbsp; B = </font><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">A</font><font size="5"><span style="mso-text-raise: -2.0pt; mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:12pt;
+ height:12pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="comb1.13.gif" v:shapes="_x0000_i1025" width="16" height="16"></span><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Equation" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1093901374">
+ </o:OLEObject>
+</xml><![endif]-->
+</font><font size="4">B</font><font size="5"> </font></span><font size="4">= AB' + A'B</font></p>
+<p>&nbsp;</p>
+
+<p><font size="5">Boolean Algebra and Logic Expression</font></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">A <i>logic expression</i> (i.e.,
+    <i>Boolean expression</i>) is an algebraic expression composed of literals
+    as independent variables and logic operators acting on these literals.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">Introduced by George Boole in 1854</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">Useful identities of Boolean
+    algebra:</font></li>
+</ul>
+<p style="line-height: 150%"><img border="0" src="wpe71269.jpg" align="left" width="450" height="267"><p style="line-height: 150%">&nbsp;<p style="line-height: 150%">&nbsp;<p style="line-height: 150%">&nbsp;<p style="line-height: 150%">&nbsp;<p style="line-height: 150%">&nbsp;
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">In particular,</font>
+    <ul>
+      <li>
+        <p style="line-height: 150%"><font size="4"><i>principle of duality</i>:&nbsp;
+        any identity remains an identity if simultaneously all 0's are changed
+        to 1's, 1's to 0's, ANDs to ORs, and ORs to ANDs. If identity is true,
+        then its dual identify must be true. </font></li>
+    </ul>
+        <p style="line-height: 150%">&nbsp;
+    <ul>
+      <li>
+        <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font size="4"><i>DeMorgan's Theorem</i> specifies
+        the most important property of Boolean algebra.</font></li>
+    </ul>
+        <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font><p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font face="Courier New">(A + B)' = A' + B'&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    and&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp;</font>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font face="Courier New">(AB)' = A' + B'</font></font><p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;
+        <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;
+    <ul>
+      <li>
+        <p style="line-height: 100%"><font size="4"><i>Absorption</i> rules:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></li>
+    </ul>
+        <p style="line-height: 100%">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font face="Courier New">A + AB = A</font>&nbsp;&nbsp;&nbsp;&nbsp; and&nbsp;&nbsp;&nbsp;
+        <font face="Courier New">A(A+B) = A</font></font>
+    <p style="line-height: 100%">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    e.g.,&nbsp;&nbsp;&nbsp;&nbsp; A + A'B = A + B</font>
+
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><font size="5">Applications of Boolean Algebra</font> <font size="5">-- Algebraic
+    Manipulation</font></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">Proof of Equivalent Logic
+    Expressions&nbsp;</font></li>
+</ul>
+<p style="line-height: 150%">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;
+<u>example</u>:&nbsp;&nbsp;&nbsp; </font><font face="Courier New" size="3">(AB)' + CA' + B'C&nbsp; =?= (AB)'</font></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">Logic Expression Simplification</font></li>
+</ul>
+<p style="line-height: 150%">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;
+<u>example</u>:&nbsp;&nbsp; Find the minimal expression for&nbsp;</font></p>
+
+<p style="line-height: 150%">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font><font face="Courier New" size="3">F(A,B,C, D) = AB'C' +
+AB'CD' + AB + AB'CD</font></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">Deriving Complement Functions</font></p>
+    <p style="line-height: 150%"><font size="4"><u>example</u>:&nbsp;&nbsp; Find the
+    complement function of&nbsp;</font></p>
+    <p style="line-height: 150%">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font><font face="Courier New" size="3">F(x,y,z) = x'yz' + x'y'z</font></p>
+  </li>
+  <li>
+    <p style="line-height: 150%">&nbsp;<font size="4">SOP &lt;=&gt; POS conversion</font><font size="4">&nbsp;</font>
+    <ul>
+      <li>
+        <p style="line-height: 150%"><font size="4">A <i>literal</i> -- an
+        instance of an original boolean variable or its complement</font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">A <i>product</i> term -- one
+        or more literals related by AND operations</font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">A <i>sum</i> term -- one or
+        more literals related by OR operations</font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">A <i>SOP</i>
+        (sum-of-product) expression -- one or more product terms related by OR
+        operations</font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">A <i>POS</i>
+        (product-of-sum) expression --one or more sum terms related by AND
+        operations</font></li>
+    </ul>
+  </li>
+</ul>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <u>Example</u>:&nbsp;&nbsp;&nbsp;
+    &nbsp;Convert the SOP expression of an XOR to its equivalent POS expression</font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </font><font face="Courier New" size="4">S = a'b + ab'&nbsp;&nbsp;&nbsp; </font><font size="4">(SOP)</font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font face="Courier New">S = (a'b + a)(a'b + b')</font></font><font face="Courier New" size="3">&nbsp;</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    [distributive law]</font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font face="Courier New">= (a'+a)(b+a)(a'+b')(b+b')</font></font><font size="3" face="Courier New">&nbsp;&nbsp;</font><font size="4">&nbsp;&nbsp;&nbsp; [distributive law]</font></p>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <font face="Courier New">= (a+b)(a'+b')</font></font><font face="Courier New" size="3">&nbsp;&nbsp;</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    [inverse law]</font>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    (POS)</font>
+    <p style="line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;
+<p style="line-height: 150%"><font size="5">Canonical Logic Expressions (standard forms)</font></p>
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4"><u>Goal</u>:&nbsp; to assure the
+    uniqueness of the algebraic representation of a logic function</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">Canonical (standard) SOP
+    expression -- SOP expression in which all product terms are <i>minterms</i>.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">Canonical (standard) POS
+    expression -- POS expression in which all sum terms are <i>maxterms</i>.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">Given the truth table of a logic
+    function, we can directly write its canonical SOP and POS expressions.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">Canonical logic expressions are
+    the most complicated expressions.</font></li>
+</ul>
+    <p style="line-height: 150%"><font size="4">
+    <u>Examples</u>:&nbsp;&nbsp; Express
+    the following logic functions in canonical SOP form and canonical POS form.</font>
+<blockquote>
+  <ul>
+    <li>
+      <p style="line-height: 150%"><font size="4"> XOR
+    function</font></li>
+    <li>
+      <p style="line-height: 150%"><font size="4"> XNOR function</font></li>
+  </ul>
+</blockquote>
+
+</body>
+
+</html>

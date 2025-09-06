@@ -1,0 +1,30 @@
+|BCD_TO_Seven_Segment
+NOTa <= inst9.DB_MAX_OUTPUT_PORT_TYPE
+A => inst9.IN0
+A => inst18.IN0
+A => inst23.IN0
+A => inst24.IN0
+B => inst7.IN0
+B => inst4.IN0
+B => inst13.IN0
+B => inst17.IN0
+B => inst21.IN0
+B => inst22.IN0
+D => inst7.IN1
+D => inst6.IN0
+D => inst10.IN1
+D => inst13.IN2
+D => inst17.IN2
+C => inst9.IN2
+C => inst10.IN0
+C => inst5.IN0
+C => inst15.IN1
+C => inst16.IN0
+NOTb <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+NOTc <= inst13.DB_MAX_OUTPUT_PORT_TYPE
+NOTd <= inst18.DB_MAX_OUTPUT_PORT_TYPE
+NOTe <= inst20.DB_MAX_OUTPUT_PORT_TYPE
+NOTf <= inst23.DB_MAX_OUTPUT_PORT_TYPE
+NOTg <= inst24.DB_MAX_OUTPUT_PORT_TYPE
+
+

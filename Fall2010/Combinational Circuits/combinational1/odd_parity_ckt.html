@@ -1,0 +1,218 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>An Odd Parity Generator and Checker</title>
+</head>
+
+<body>
+
+<p><b><font size="5" face="Copperplate Gothic Bold"><span style="mso-bidi-font-size: 10.0pt">A
+Parity Generator and Checker</span></font></b></p>
+
+<p><font size="5"><b>A 4-bit Parity Generator</b></font></p>
+
+<p><font size="5">Assume:&nbsp;</font></p>
+
+<ul>
+  <li>
+    <p><font size="4"> Odd-Parity&nbsp;</font></p>
+
+  </li>
+  <li>
+    <p><font size="4"> 4-bit data + 1 parity bit</font></p>
+
+  </li>
+</ul>
+
+<p>&nbsp;</p>
+
+<p><font size="4">(1)&nbsp; inputs: b3, b2, b1, b0&nbsp;&nbsp;&nbsp;&nbsp; output:&nbsp;&nbsp; P
+(odd parity bit)</font></p>
+
+<p><font size="4">(2)&nbsp; Truth Table</font></p>
+
+  <table border="1" cellspacing="3" width="27%">
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        b3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; b2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        b1&nbsp;&nbsp;&nbsp;&nbsp; b0</td>
+      <td width="23%">
+        <p align="center">P</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0</td>
+      <td width="23%" align="center">0</td>
+    </tr>
+    <tr>
+      <td width="77%" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1</td>
+      <td width="23%" align="center">1</td>
+    </tr>
+  </table>
+<p>&nbsp;</p>
+
+<p><font size="4">(3)&nbsp; Canonical SOP</font></p>
+
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; P(b3, b2, b1, b0) = b3'b2'b1'b0' + b3'b2'b1b0 +</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ b3'b2b1'b0 + b3'b2b1b0' +</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ b3b2'b1'b0 + b3b2'b1b0' +</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ b3b2b1'b0' + b3b2b1b0&nbsp;</font></p>
+
+<p><font size="4">&nbsp;(4)&nbsp;
+Minimization:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;P(b3, b2, b1, b0) = b3'b2'(b1 </font><font size="2">XNOR</font><font size="4">
+b0) + b3'b2(b1 </font><font size="2">XOR</font><font size="4"> b0) +</font></p>
+
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ b3b2'(b1 </font><font size="2">XOR</font><font size="4"> b0) + b3b2(b1 </font><font size="2">XNOR</font><font size="4">
+b0)</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (b1 </font><font size="2">XNOR</font><font size="4"> b0)(b3'b2' + b3b2) +</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ (b1 </font><font size="2">XOR</font><font size="4"> b0)(b3'b2 + b3b2')</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (b1 </font><font size="2">XNOR</font><font size="4"> b0)(b3 </font><font size="2">XNOR</font><font size="4">
+b2) +</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ (b1</font><font size="2">XOR</font><font size="4"> b0)(b3 </font><font size="2">XOR</font><font size="4">
+b2)</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (b1 </font><font size="2">XNOR</font><font size="4"> b0)(b3 </font><font size="2">XNOR</font><font size="4">
+b2) +</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ (b1</font><font size="2">XNOR</font><font size="4"> b0)'(b3 </font><font size="2">XNOR</font><font size="4">
+b2)'</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= (b1 </font><font size="2">XNOR</font><font size="4"> b0) </font><font size="2">XNOR</font><font size="4">
+(b3 </font><font size="2">XNOR</font><font size="4"> b2)</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= b1 </font><font size="2">XNOR</font><font size="4"> b0 </font><font size="2">XNOR</font><font size="4">
+b3 </font><font size="2">XNOR</font><font size="4"> b2&nbsp;</font></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;<font size="4">(5)&nbsp; Circuit Diagram</font></p>
+
+<p>&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="odd_pa3.gif" width="417" height="106"></p>
+
+<p>&nbsp;</p>
+<p><font size="5"><b>A 5-bit Parity Checker</b></font></p>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="odd_pa4.gif" width="541" height="139"></p>
+
+</body>
+
+</html>

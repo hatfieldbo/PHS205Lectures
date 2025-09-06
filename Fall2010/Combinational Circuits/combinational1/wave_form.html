@@ -1,0 +1,92 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Propagation Delays in Comb. Ckt</title>
+</head>
+
+<body>
+
+<p><span style="mso-bidi-font-size: 10.0pt"><b><font size="5" face="Copperplate Gothic Bold">Dynamic
+Characteristics of Combinational Logic Functions</font></b></span></p>
+
+<p><font size="5">Measuring on a real waveform diagram</font></p>
+
+<p><font size="4">Example 1: Propagation delay in an AND gate</font></p>
+
+<p>&nbsp;</p>
+
+<p><img border="0" src="wave_f1.gif" width="551" height="189"></p>
+
+<p><font size="4">Example 2:&nbsp;&nbsp; Delays in a full adder circuit</font></p>
+
+<ul>
+  <li>
+    <p style="line-height: 150%"><i><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">P</span></font></i><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4"><i>ropagation
+    Delay</i> is one of the major factors that determines the hardware speed of
+    digital systems</font></span></li>
+  <li>
+    <p style="line-height: 150%"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">Another
+    factor that determines the dynamic behavior of digital systems is the <i>changing
+    speed of signal waveforms</i>. The time duration of the rising edge and the
+    falling edge are the two metrics in this category.</font></span></li>
+</ul>
+
+<p><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Times;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:456pt;
+ height:145.5pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/01/clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<img src="wave_f2.gif" v:shapes="_x0000_i1025" width="608" height="194"><!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1095666660">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></font></p>
+<ul>
+  <li>
+    <p style="line-height: 150%"><i style="mso-bidi-font-style:normal"><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">static
+    hazards</span></font></i><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+    -- the signal should normally remain unchanged, but momentarily changes its
+    value in a short period of time.</span></font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4"><span style="font-family:&quot;Times New Roman&quot;">Hazard
+    usually causes no harm to the normal function of a pure combinational logic </span>circuit.
+    However, when combinational logic circuits are used in connection with
+    sequential circuits, the short-duration pulses (glitches) caused by the
+    hazards may affect the normal operation of the sequential circuits, if the
+    overall system works asynchronously.</font></li>
+  <li>
+    <p style="line-height: 150%"><font size="4">It is necessary to understand
+    the cause of the hazard and find a method to avoid it.</font></li>
+</ul>
+
+</body>
+
+</html>

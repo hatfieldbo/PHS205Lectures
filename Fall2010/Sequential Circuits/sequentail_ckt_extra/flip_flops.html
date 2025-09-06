@@ -1,0 +1,528 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Latches and Flip-Flops</title>
+</head>
+
+<body>
+
+<p><b><font size="5" face="Copperplate Gothic Bold"><span style="mso-bidi-font-size: 10.0pt">Latches
+and Flip-Flops</span></font></b></p>
+<ul>
+  <li><font size="4"> the building blocks
+of sequential circuits</font></li>
+  <li><font size="4"> gates can be built directly from transistors</font></li>
+  <li><font size="4">latches can be built
+from gates</font></li>
+  <li><font size="4"> flip-flops can be built from latches.</font></li>
+  <li><font size="4">An output of latches and flip-flops depends not
+only on the current inputs, but also on previous inputs and outputs.&nbsp;</font></li>
+  <li><font size="4"> The
+difference between a latch and a flip-flop is that a latch does not have a <em>clock
+signal</em>, whereas a flip-flop always does.</font></li>
+</ul>
+
+<p><font size="5">Latches</font></p>
+
+<ul>
+  <li>
+    <font size="4">
+How can we make a circuit out of gates that is not combinatorial?</font>
+    <ul>
+      <li><font size="4"><i>feed-back </i>- to create <em>loops</em> in the circuit diagrams</font></li>
+      <li><font size="4">output
+values depend, indirectly, on themselves</font></li>
+      <li><font size="4">If such feed-back is <em>positive</em>
+then the circuit tends to have stable states, and if it is <em>negative</em> the
+circuit will tend to oscillate.</font></li>
+    </ul>
+    <p>&nbsp;</li>
+  <li><font size="4">A simple latch (a <em>SR-latch</em>, s - <em>set</em> and r
+    - <em>reset</em>.)</font>
+    <ul>
+      <li>
+<p><font size="4">output value depends on the <em>history</em> of input values</font></li>
+      <li><p><font size="4"><u>allows at most one input to be 1 at any time</u></font></li>
+    </ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe48257.jpg" width="250" height="163">
+    <ul>
+      <li><font size="4">case 1:&nbsp; s = 0, r = 0, and x = 1</font></li>
+      <li><font size="4">case 2:&nbsp; s = 0, r = 0, and x = 0</font></li>
+      <li><font size="4">case 3:&nbsp; s = 1, r = 0, and x = 1</font>
+        <ul>
+          <li><font size="4">now, s changes from 1 =&gt; 0</font></li>
+        </ul>
+        <p>&nbsp;</li>
+      <li><font size="4">case 4:&nbsp; s = 1, r = 0, and x = 0</font>
+        <ul>
+          <li><font size="4">now, s changes from 1 =&gt; 0</font></li>
+        </ul>
+      </li>
+    </ul>
+    <p>&nbsp;
+    <ul>
+      <li><font size="4">case 5:&nbsp; s = 0, r = 1, and x = 1</font>
+        <ul>
+          <li><font size="4">now, r changes from 1 to 0</font></li>
+        </ul>
+        <p>&nbsp;</li>
+      <li><font size="4">case 6:&nbsp; s = 0, r = 1, and x = 0</font>
+        <ul>
+          <li><font size="4">now, r changes from 1 to 0</font></li>
+        </ul>
+        <p>&nbsp;</li>
+      <li>
+        <p align="left"><font size="4">Logic Symbol</font></li>
+      <li>
+        <p align="left"><font size="4">State Transition Table</font></li>
+    </ul>
+    <div align="center">
+      <table border="1" cellspacing="3" width="40%">
+        <tr>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">s</font></td>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">r</font></td>
+          <td width="34%" align="center">
+            <p align="center"><font size="4">x (t+1)</font></td>
+        </tr>
+        <tr>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">0</font></td>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">0</font></td>
+          <td width="34%" align="center">
+            <p align="center"><font size="4">x(t)</font></td>
+        </tr>
+        <tr>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">1</font></td>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">0</font></td>
+          <td width="34%" align="center">
+            <p align="center"><font size="4">1</font></td>
+        </tr>
+        <tr>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">0</font></td>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">1</font></td>
+          <td width="34%" align="center">
+            <p align="center"><font size="4">0</font></td>
+        </tr>
+        <tr>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">1</font></td>
+          <td width="33%" align="center">
+            <p align="center"><font size="4">1</font></td>
+          <td width="34%" align="center">
+            <p align="center"><font size="4">undefined</font></td>
+        </tr>
+      </table>
+    </div>
+    &nbsp;
+    <ul>
+      <li>
+        <p align="left"><font size="4">Timing Diagram</font></li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li><font size="4">
+Latches are <em>asynchronous</em>, which means that the output changes very soon
+after the input changes.&nbsp;</font></li>
+  <li><font size="4"> Most computers today, on the other hand, are <em>synchronous</em>,
+which means that the outputs of all the sequential circuits change
+simultaneously to the rhythm of a global <em>clock signal</em>.</font></li>
+</ul>
+    <p class="MsoNormal">&nbsp;
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">Clocked SR Latch</font>
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Circuit Diagram</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img border="0" src="wpe80284.jpg" width="463" height="182"></p>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Logic Symbol</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">State Transition Table</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+  <table border="1" cellspacing="3" width="40%">
+    <tr>
+      <td width="33%" align="center"><font size="4">Clock</font></td>
+      <td width="33%" align="center"><font size="4">S</font></td>
+      <td width="33%" align="center"><font size="4">R</font></td>
+      <td width="34%" align="center"><font size="4">Q</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="33%" align="center"><font size="4">X</font></td>
+      <td width="33%" align="center"><font size="4">X</font></td>
+      <td width="34%" align="center"><font size="4">No Change</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="34%" align="center"><font size="4">No Change</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="34%" align="center"><font size="4">0</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="34%" align="center"><font size="4">1</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="34%" align="center"><font size="4">undefined</font></td>
+    </tr>
+  </table>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Timing Diagram</font></li>
+    </ul>
+  </li>
+</ul>
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">Clocked D Latch</font>
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Circuit Diagram</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img border="0" src="wpe80289.jpg" width="457" height="204"></p>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Logic Symbol</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">State Transition Table</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;</p>
+  <table border="1" cellspacing="3" width="40%">
+    <tr>
+      <td width="33%" align="center"><font size="4">Clock</font></td>
+      <td width="33%" align="center"><font size="4">D</font></td>
+      <td width="34%" align="center"><font size="4">Q</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="33%" align="center"><font size="4">X</font></td>
+      <td width="34%" align="center"><font size="4">No Change</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="34%" align="center"><font size="4">0</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="34%" align="center"><font size="4">1</font></td>
+    </tr>
+  </table>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Timing Diagram</font></li>
+    </ul>
+  </li>
+</ul>
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p><font size="5">Flip-Flops</font></p>
+
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">Level-triggered vs. Edge-triggered</font>
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Level-triggered</font>
+        <ul>
+          <li>
+            <p class="MsoNormal"><font size="4">level-sensitive</font></li>
+          <li>
+            <p class="MsoNormal"><font size="4">input signals may affect the
+            output during the entire interval when the clock signal is valid</font></li>
+        </ul>
+      </li>
+      <li>
+        <p class="MsoNormal"><font size="4">Edge-triggered</font>
+        <ul>
+          <li>
+            <p class="MsoNormal"><font size="4">edge-sensitive</font></li>
+          <li>
+            <p class="MsoNormal"><font size="4">input signals may affect the
+            output only during the transition moment of the clock signal --
+            i.e., output changes only as a result of clock transition</font></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">a clock-pulse generator</font></li>
+</ul>
+    <p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img border="0" src="wpe80294.jpg" width="500" height="302">
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">D Flip-Flops (Edge-triggered)</font>
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Circuit Diagram</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;
+    <img border="0" src="wpe80299.jpg" width="450" height="148"></font></p>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Logic Symbol</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">State Transition Table</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;</p>
+  <table border="1" cellspacing="3" width="40%">
+    <tr>
+      <td width="33%" align="center"><font size="4">Clock</font></td>
+      <td width="33%" align="center"><font size="4">D</font></td>
+      <td width="34%" align="center"><font size="4">Q</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">no pulse</font></td>
+      <td width="33%" align="center"><font size="4">X</font></td>
+      <td width="34%" align="center"><font size="4">No Change</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">^</font></td>
+      <td width="33%" align="center"><font size="4">0</font></td>
+      <td width="34%" align="center"><font size="4">0</font></td>
+    </tr>
+    <tr>
+      <td width="33%" align="center"><font size="4">^</font></td>
+      <td width="33%" align="center"><font size="4">1</font></td>
+      <td width="34%" align="center"><font size="4">1</font></td>
+    </tr>
+  </table>
+    <p class="MsoNormal">&nbsp;
+    <ul>
+      <li>
+        <p class="MsoNormal"><font size="4">Timing Diagram</font></li>
+    </ul>
+    <p class="MsoNormal">&nbsp;</li>
+</ul>
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">Positive D-Latch, Negative D-Latch,
+    Positive Edge-triggering D Flip-Flips and Negative Edge-triggering D
+    Flip-Flops</font></li>
+</ul>
+    <p class="MsoNormal">&nbsp;
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe80304.jpg" width="732" height="169"></p>
+<p class="MsoNormal"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Example:&nbsp; Timing diagram (in-class discussion)</font></p>
+
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">S-R Flip-Flops</font></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <p class="MsoNormal"><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Times;mso-fareast-font-family:SimSun;mso-bidi-font-family:&quot;Times New Roman&quot;;
+color:black;mso-ansi-language:EN-US;mso-fareast-language:EN-US;mso-bidi-language:
+AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600"
+ o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f"
+ stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:243pt;
+ height:71.25pt' o:ole="">
+ <v:imagedata src="file:///C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\msohtml1\01\clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1128458084">
+ </o:OLEObject>
+</xml><![endif]-->
+    <img border="0" src="sr_ff.gif"></span>
+    <p class="MsoNormal">&nbsp;
+    <div align="left">
+      <table border="0" cellpadding="0" cellspacing="3" width="27%">
+        <tr>
+          <td width="25%" align="center">Clock</td>
+          <td width="25%" align="center">S</td>
+          <td width="25%" align="center">R</td>
+          <td width="50%" align="center">Q(t+1)</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">0</td>
+          <td width="25%" align="center">X</td>
+          <td width="25%" align="center">X</td>
+          <td width="50%" align="center">Q(t)</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">0</td>
+          <td width="25%" align="center">0</td>
+          <td width="50%" align="center">Q(t)</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">1</td>
+          <td width="25%" align="center">0</td>
+          <td width="50%" align="center">1</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">0</td>
+          <td width="25%" align="center">1</td>
+          <td width="50%" align="center">0</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">1</td>
+          <td width="25%" align="center">1</td>
+          <td width="50%" align="center">------</td>
+        </tr>
+      </table>
+    </div>
+  </blockquote>
+</blockquote>
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">J-K
+    Flip-Flops</font></li>
+</ul>
+    <p class="MsoNormal">&nbsp;&nbsp;&nbsp;<font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img border="0" src="jk_ff.gif">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font>
+<blockquote>
+  <blockquote>
+    <div align="left">
+      <table border="0" cellpadding="0" cellspacing="3" width="26%">
+        <tr>
+          <td width="25%" align="center">Clock</td>
+          <td width="25%" align="center">J</td>
+          <td width="25%" align="center">K</td>
+          <td width="50%" align="center">Q(t+1)</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">0</td>
+          <td width="25%" align="center">X</td>
+          <td width="25%" align="center">X</td>
+          <td width="50%" align="center">Q(t)</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">0</td>
+          <td width="25%" align="center">0</td>
+          <td width="50%" align="center">Q(t)</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">1</td>
+          <td width="25%" align="center">0</td>
+          <td width="50%" align="center">1</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">0</td>
+          <td width="25%" align="center">1</td>
+          <td width="50%" align="center">0</td>
+        </tr>
+        <tr>
+          <td width="25%" align="center">^</td>
+          <td width="25%" align="center">1</td>
+          <td width="25%" align="center">1</td>
+          <td width="50%" align="center">[Q(t)]'</td>
+        </tr>
+      </table>
+    </div>
+  </blockquote>
+</blockquote>
+<ul>
+  <li>
+    <p class="MsoNormal"><font size="4">T Flip-Flops</font></li>
+</ul>
+<p class="MsoNormal">&nbsp;&nbsp; <font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="t_ff.gif"></font></p>
+<blockquote>
+  <blockquote>
+    <div align="justify">
+      <table border="0" cellpadding="0" cellspacing="3" width="23%">
+        <tr>
+          <td width="25%" align="center">Clock</td>
+          <td width="25%" align="center">T</td>
+          <td width="25%" align="center">Q(t+1)</td>
+        </tr>
+        <tr>
+          <td width="33%" align="center">0</td>
+          <td width="33%" align="center">X</td>
+          <td width="34%" align="center">Q(t)</td>
+        </tr>
+        <tr>
+          <td width="33%" align="center">^</td>
+          <td width="33%" align="center">0</td>
+          <td width="34%" align="center">Q(t)</td>
+        </tr>
+        <tr>
+          <td width="33%" align="center">^</td>
+          <td width="33%" align="center">1</td>
+          <td width="34%" align="center">[Q(t)]'</td>
+        </tr>
+      </table>
+    </div>
+  </blockquote>
+</blockquote>
+
+</body>
+
+</html>

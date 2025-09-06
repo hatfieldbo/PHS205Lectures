@@ -1,0 +1,259 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Programmerable Array Logic</title>
+</head>
+
+<body>
+
+<p><b><font size="5" face="Copperplate Gothic Bold"><span style="mso-bidi-font-size: 10.0pt">Programmerable
+Logic Devices (PLDs)</span></font></b></p>
+
+<p><font size="5">Motivation</font></p>
+
+<ul>
+  <li><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">to
+    provide the designer of computer systems with a <u>universal</u> logic
+    device that can be programmed for implementation of <u>any</u> set of logic
+    functions.</font></span></li>
+  <li><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">any
+    logic function can be represented as some type of SOP form</span></font></li>
+  <li><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">SOP
+    &lt;==&gt; two level AND-OR circuit &lt;==&gt; AND-array and/or OR-array</span></font></li>
+</ul>
+<p><font size="5">Many Types of PLDs</font></p>
+
+<ul>
+  <li>
+    <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><font size="4">Programmable
+    Logic Arrays (PLAs)</font></li>
+  <li>
+    <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><font size="4">Read-Only
+    Memorys (ROMs)</font></li>
+  <li>
+    <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><font size="4">Programmable
+    Array Logic (PALs)</font></li>
+</ul>
+<p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt">&nbsp;&nbsp;&nbsp;<font size="4">
+More recently,</font></p>
+<ul>
+  <li>
+    <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">complex
+    programmable logic devices (CPLDs)</font></span>
+    <ul>
+      <li>
+        <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">comprises
+        multiple circuit blocks on a single chip, with internal wiring resources
+        to connect the circuit blocks</span></font></li>
+      <li>
+        <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Each
+        circuit block is similar to a PLA or a PAL</span></font></li>
+      <li>
+        <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">typically
+        contain a few thousand programmable switches. It is thus not feasible
+        for a user to manually program each switch.&nbsp;</span></font></li>
+      <li>
+        <p class="MsoNormal" style="text-align:justify;line-height:18.0pt;tab-stops:.25in .5in .75in 1.0in 1.25in 94.0pt 1.5in 1.75in 139.0pt 2.0in 2.5in 189.0pt 3.0in 3.5in 4.0in 310.0pt 4.5in 333.0pt 5.0in 423.0pt"><font size="4"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">CAD
+        tools are used to automatically produce the necessary information for <i style="mso-bidi-font-style:normal">configuring</i>
+        or <i style="mso-bidi-font-style:normal">programming</i> a chip.<span style="mso-tab-count: 1; mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></span></font></li>
+    </ul>
+  </li>
+</ul>
+
+<p><b><font size="5">Programmerable Logic Arrays (PLAs)</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></p>
+
+<p><font size="5">Basic Features</font></p>
+<ul>
+  <li><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">A
+    PLA consists of a <i>programmable</i> AND-array and a <i>programmable</i>
+    OR-array.</font></span></li>
+      <li><font size="4"><font face="Courier New">n</font> -- number of input lines</font></li>
+      <li><font face="Courier New" size="4">p </font><font size="4">-- number of
+        product terms</font></li>
+      <li><font size="4"><font face="Courier New">m</font> -- number of output
+        lines</font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">The size of any PLA is
+        measured by&nbsp;<font face="Courier New">n×p×m</font>&nbsp;</font></li>
+      <li>
+        <p style="line-height: 150%"><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">Commercially
+        available PLAs typically have 16 inputs, 48 products terms, and 8
+        outputs, and the outputs may be complemented or uncomplemented.</font></span></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">Example: A <font face="Courier New">12×50×9</font>
+        PLA</font>
+        <ul>
+          <li><font face="Courier New">12 inputs</font></li>
+          <li><font face="Courier New" size="4">50 product terms</font></li>
+          <li><span lang="EN-US" style="color: black; mso-color-index: 0; mso-ansi-language: EN-US"><font face="Courier New" size="4">9
+            outputs&nbsp;</font></span></li>
+        </ul>
+      </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe90051.jpg" width="584" height="600"></p>
+<p><font size="4">&nbsp;&nbsp;</font></p>
+
+<p><font size="5">Different Types of PLAs</font></p>
+
+<ul>
+  <li><font size="4"><span style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><i style="mso-bidi-font-style:normal"><b>mask-programmable
+    PLA</b></i><i style="mso-bidi-font-size: 10.0pt; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">
+    </i>-- if t</span><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">he
+    AND-array and the OR-array are programmed by the manufacturer according to
+    the program table provided by the customer</span></font></li>
+</ul>
+
+<ul>
+  <li><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4"><b><i style="mso-bidi-font-style:
+normal">field-programmable PLA</i> (<i>FPLA</i>)</b> -- if the AND-array and the
+    OR-array can be programmed by the user by blowing fusible links or leaving
+    them intact</font></span></li>
+</ul>
+
+<p>&nbsp;</p>
+
+<ul>
+</ul>
+
+<p:colorscheme
+ colors="#000000,#FFFFCC,#5F5F5F,#FFCC00,#FF7C80,#990099,#FF3399,#9933FF"/>
+<p><font size="5">Applications</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+
+<ul>
+  <li><font size="4">General-purpose combinational function implementation</font></li>
+    <li><font size="4">Example:<font face="Courier New"> <span lang="EN-US" style="color: black; mso-color-index: 0; mso-ansi-language: EN-US">Implement
+      function</span></font></font></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;<font face="Courier New" size="4"><span style="color: black; mso-color-index: 0; mso-ansi-language: EN-US" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+y(s2,s1,s0)= s2's1's0 + s2's1s0' + s2s1's0' + s2s1's0</span></font></p>
+
+<ul>
+  <li><font size="4">Example:&nbsp; A full adder implemented on a PLA</font>
+    <ul>
+      <li><font size="4">a PLA without any information written to it</font></li>
+    </ul>
+    <p><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Times;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <img border="0" src="wpe1.jpg" width="500" height="461"></span></p>
+    <p><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Times;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:260.25pt;
+ height:239.25pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/03/clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+    <!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1096283918">
+ </o:OLEObject>
+</xml><![endif]-->
+    </span>
+    <ul>
+      <li><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">Implementation
+        of full adder optimized to a minimum of 3 x 5 x 2 PLA</font></span></li>
+    </ul>
+    <p></li>
+</ul>
+<p><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Times;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe2.jpg" width="650" height="347"></span></p>
+
+<p><span style="font-size:12.0pt;mso-bidi-font-size:10.0pt;
+font-family:Times;mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:
+&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:EN-US;
+mso-bidi-language:AR-SA"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:455.25pt;
+ height:243pt' o:ole="">
+ <v:imagedata src="file:///C:/WINDOWS/TEMP/msoclip1/03/clip_image001.wmz"
+  o:title=""/>
+</v:shape><![endif]-->
+<!--[if gte mso 9]><xml>
+ <o:OLEObject Type="Embed" ProgID="Word.Picture.8" ShapeID="_x0000_i1025"
+  DrawAspect="Content" ObjectID="_1096284034">
+ </o:OLEObject>
+</xml><![endif]-->
+</span></p>
+
+<ul>
+  <li><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4"><u>Note</u>:
+    To achieve efficient utilization of the product terms of a PLA, it is
+    important to optimize the logic design so that the multiple output functions
+    of the same set of input variables can make use of as many common product
+    terms as possible.</font></span></li>
+</ul>
+
+<p><b><font size="5">Read-Only Memory (ROMs)</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></p>
+
+<ul>
+  <li><font size="4">actually a combinational circuit!</font></li>
+  <li><font size="4">a fixed AND-array and a programmerable OR-array</font></li>
+  <li><font size="4">direct implementation of the truth table of a function
+    without the need for<span style="mso-spacerun: yes"> </span>simplification</font></li>
+  <li><span style="mso-bidi-font-size: 10.0pt; font-family: Times; mso-fareast-font-family: Times New Roman; mso-bidi-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="4">The
+    user-programmable ROM is known as <b><i style="mso-bidi-font-style:normal">programmable
+    ROM</i> (PROM)</b> or <b><i style="mso-bidi-font-style:normal">erasable PROM</i>
+    (EPROM)</b></font></span></li>
+</ul>
+
+<p><b><font size="5">Programmerable Array Logic (PAL)</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></b></p>
+
+<ul>
+  <li><font size="4">a programmerable AND-array and a fixed OR-array</font></li>
+</ul>
+
+<hr>
+
+<p><font face="Lucida Calligraphy"><a href="msi_modules.html">Back</a></font></p>
+
+</body>
+
+</html>

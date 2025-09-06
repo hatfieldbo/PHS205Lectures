@@ -1,0 +1,812 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Decoders</title>
+</head>
+
+<body>
+
+<p><b><font size="5" face="Copperplate Gothic Bold"><span style="mso-bidi-font-size: 10.0pt">Decoders</span></font></b></p>
+
+<p><font size="5">Basic Features</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+
+    <ul>
+      <li><font size="4"><font face="Courier New">n</font>  input lines</font></li>
+      <li><font size="4"><font face="Courier New">2<sup>n</sup>  </font>output inputs</font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">The size of any decoder is
+        measured by&nbsp;&nbsp; <font face="Courier New">n-to-2<sup>n</sup></font></font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">Example: An <font face="Courier New">3-to-8</font>
+        Decoder</font>
+        <ul>
+          <li><font face="Courier New" size="4">n = 3 input lines</font></li>
+          <li><font size="4"><font face="Courier New">2<sup>n</sup> = 8 output inputs</font></font></li>
+          <li>
+            <p style="line-height: 150%"><span lang="EN-US" style="color: black; mso-color-index: 0; mso-ansi-language: EN-US"><font face="Courier New" size="4">
+1-2 enable lines</font></span></li>
+        </ul>
+      </li>
+    </ul>
+<p><font size="5">Logic Symbol</font></p>
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">A simplified symbol of an <font face="Courier New">3-to-8</font>
+    Decoder:</font></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" src="decoder.gif" width="293" height="240"></p>
+<p><font size="5">Truth Table</font>&nbsp;&nbsp;&nbsp;<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<table style="BORDER-RIGHT: medium none; BORDER-TOP: medium none; BORDER-LEFT: medium none; BORDER-BOTTOM: medium none; BORDER-COLLAPSE: collapse; mso-border-alt: solid black .75pt; mso-padding-alt: 0in 5.4pt 0in 5.4pt" cellSpacing="0" cellPadding="0" border="1">
+  <tbody>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">A<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">B<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">C<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><font size="3"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt">D<sub>0</sub><U1:P>
+        </span><span style="FONT-WEIGHT: normal"><O:P>
+        </O:P>
+        </span></font></h1>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><font size="3"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt">D<sub>1</sub><U1:P>
+        </span><span style="FONT-WEIGHT: normal; FONT-SIZE: 18pt"><O:P>
+        </O:P>
+        </span></font></h1>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt"><font size="3">D<sub>2</sub><U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></h1>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><font size="3"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt">D<sub>3</sub><U1:P>
+        </span><span style="FONT-WEIGHT: normal; FONT-SIZE: 18pt"><O:P>
+        </O:P>
+        </span></font></h1>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt"><font size="3">D<sub>4</sub><U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></h1>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt"><font size="3">D<sub>5</sub><U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></h1>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt"><font size="3">D<sub>6</sub><U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></h1>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: black 0.75pt solid; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt" vAlign="top" width="53">
+        <h1 style="TEXT-ALIGN: center" align="center"><span style="font-weight: normal; mso-bidi-font-size: 24.0pt"><font size="3">D<sub>7</sub><U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></h1>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">1<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">1<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">1<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">1<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">1<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">1<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+    <tr>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: black 0.75pt solid; WIDTH: 34.3pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-top-alt: solid black .75pt" vAlign="top" width="46">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 33.35pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="44">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">1<U1:P>
+        </U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><font size="3"><span style="mso-bidi-font-size: 12.0pt">0<U1:P>
+        </span><O:P>
+        </O:P>
+        </font>
+        </p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">0<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+      <td style="BORDER-RIGHT: black 0.75pt solid; PADDING-RIGHT: 5.4pt; BORDER-TOP: medium none; PADDING-LEFT: 5.4pt; PADDING-BOTTOM: 0in; BORDER-LEFT: medium none; WIDTH: 40.05pt; PADDING-TOP: 0in; BORDER-BOTTOM: black 0.75pt solid; mso-border-left-alt: solid black .75pt; mso-border-top-alt: solid black .75pt" vAlign="top" width="53">
+        <p class="MsoNormal" style="TEXT-ALIGN: center; mso-margin-top-alt: auto; mso-margin-bottom-alt: auto" align="center"><span style="mso-bidi-font-size: 12.0pt"><font size="3">1<U1:P>
+        <O:P>
+        </O:P>
+        </font>
+        </span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<p><font size="5">Implementation&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe10579.jpg" width="350" height="326"></p>
+<p><font size="5">Applications</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+
+<ul>
+  <li><font size="4">Memory Address lines decoding</font></li>
+  <li><font size="4">General-purpose combinational function generator</font></li>
+</ul>
+
+<ul>
+    <li><font size="4">Example:&nbsp; <font face="Courier New">Use an 3-to-8
+      Decoder to implement the majority function</font></font></li>
+</ul>
+<p>&nbsp;</p>
+
+<ul>
+    <li><font size="4">Example:<font face="Courier New"> <span lang="EN-US" style="color: black; mso-color-index: 0; mso-ansi-language: EN-US">Implement
+      function</span></font></font></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;<font face="Courier New" size="4"><span style="color: black; mso-color-index: 0; mso-ansi-language: EN-US" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+y(s2,s1,s0)= s2's1's0 + s2's1s0' + s2s1's0' + s2s1's0</span></font></p>
+<p:colorscheme
+ colors="#000000,#FFFFCC,#5F5F5F,#FFCC00,#FF7C80,#990099,#FF3399,#9933FF"/>
+<hr>
+<p><font face="Lucida Calligraphy"><a href="msi_modules.html">Back</a></font></p>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

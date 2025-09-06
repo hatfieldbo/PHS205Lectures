@@ -1,0 +1,45 @@
+Version 8.0 Build 231 07/10/2008 Service Pack 1 SJ Web Edition
+11
+1009
+OFF
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Partition --
+-- End Partition --
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+BCD_TO_Seven_Segment
+# storage
+db|BCD_TO_Seven_Segment.(0).cnf
+db|BCD_TO_Seven_Segment.(0).cnf
+# case_insensitive
+# source_file
+BCD_TO_Seven_Segment.bdf
+cedd117773795b2d093c2aea7fade1
+25
+# internal_option {
+BLOCK_DESIGN_NAMING
+AUTO
+}
+# hierarchies {
+|
+}
+# macro_sequence
+
+# end
+# complete
+

@@ -1,0 +1,336 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Combinational MSI Modules</title>
+</head>
+
+<body>
+
+<p><b><font size="5" face="Copperplate Gothic Bold"><span style="mso-bidi-font-size: 10.0pt">Muliplexers</span></font></b></p>
+
+<p><font size="5">Basic Features</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+
+    <ul>
+      <li><font size="4"><font face="Courier New">n</font> select lines</font></li>
+      <li><font size="4"><font face="Courier New">2<sup>n</sup> </font> data inputs</font></li>
+      <li><font size="4"><font face="Courier New">1 to 2</font> data output</font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">The size of any <a href="http://www-s.ti.com/cgi-bin/sc/family3.cgi?family=MULTIPLEXERS">multiplexers</a>
+        is
+        measured by&nbsp;&nbsp; <font face="Courier New">2<sup>n</sup>×1</font></font></li>
+      <li>
+        <p style="line-height: 150%"><font size="4">Example: <a href="http://focus.ti.com/docs/prod/productfolder.jhtml?genericPartNumber=SN74S151"> An <font face="Courier New"> 8×1</font> MUX</a></font>
+        <ul>
+          <li><font size="4"><font face="Courier New">2<sup>n</sup> = 8 data
+            inputs</font></font></li>
+          <li><font face="Courier New" size="4">n = 3 select lines</font></li>
+          <li><span lang="EN-US" style="color: black; mso-color-index: 0; mso-ansi-language: EN-US"><font face="Courier New" size="4">inputs selected by n control
+            inputs&nbsp;</font></span></li>
+          <li>
+            <p style="line-height: 150%"><font face="Courier New" size="4">1
+            data output </font><font size="4">( 1 data output with any size MUX
+            )</font></li>
+          <li>
+            <p style="line-height: 150%"><span lang="EN-US" style="color: black; mso-color-index: 0; mso-ansi-language: EN-US"><font face="Courier New" size="4">
+1-2 enable lines</font></span></li>
+        </ul>
+      </li>
+      <li>
+        <p style="line-height: 150%"><font size="4">How about:&nbsp;&nbsp;&nbsp;
+        <a href="http://focus.ti.com/docs/prod/productfolder.jhtml?genericPartNumber=SN74150">a <font face="Courier New">16×1</font> 
+        MUX</a>,&nbsp;&nbsp;&nbsp;&nbsp; <a href="http://focus.ti.com/docs/prod/productfolder.jhtml?genericPartNumber=SN74LS153">a <font face="Courier New">4×1
+        </font>MUX</a></font></li>
+    </ul>
+        <p style="line-height: 150%">&nbsp;
+<p><font size="5">Logic Symbol</font></p>
+<ul>
+  <li>
+    <p style="line-height: 150%"><font size="4">A simplified symbol of an <font face="Courier New"> 8×1</font> 
+    MUX:</font></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img border="0" src="wpe58342.jpg" width="254" height="300"></p>
+<p><font size="5">Truth Table</font>&nbsp;&nbsp;&nbsp;<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+<table border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;
+ border:none;mso-border-alt:solid black 1.5pt;mso-padding-alt:0in 5.4pt 0in 5.4pt">
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:1.5pt;border-left:
+  1.5pt;border-bottom:.75pt;border-right:.75pt;border-color:black;border-style:
+  solid;mso-diagonal-down:.75pt solid black;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">A<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border-top:solid black 1.5pt;
+  border-left:none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">B<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border-top:solid black 1.5pt;
+  border-left:none;border-bottom:solid black .75pt;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">C<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border-top:solid black 1.5pt;
+  border-left:none;border-bottom:solid black .75pt;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <h1 align="center"><font size="5">F</font></h1>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:none;border-right:solid black .75pt;mso-border-top-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border:none;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border:none;border-right:solid black .75pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border:none;border-right:solid black 1.5pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>0</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:none;border-right:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border:none;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>1</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:none;border-right:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border:none;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>2</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:none;border-right:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border:none;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>3</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:none;border-right:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border:none;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>4</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:none;border-right:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border:none;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>5</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:none;border-right:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border:none;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">0<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border:none;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>6</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:solid black 1.5pt;
+  border-bottom:solid black 1.5pt;border-right:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><b><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></b></p>
+    </td>
+    <td width="42" valign="top" style="width:31.85pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black .75pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="44" valign="top" style="width:32.8pt;border-top:none;border-left:none;
+  border-bottom:solid black 1.5pt;border-right:solid black .75pt;mso-border-left-alt:
+  solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">1<o:p>
+      </o:p>
+      </span></p>
+    </td>
+    <td width="51" valign="top" style="width:38.55pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.5pt;border-right:solid black 1.5pt;
+  mso-border-left-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt" align="left">
+      <p class="MsoNormal" align="center"><span style="font-size:18.0pt;mso-bidi-font-size:12.0pt">D<sub>7</sub><o:p>
+      </o:p>
+      </span></p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<p><font size="5">Implementation&nbsp;</font></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img border="0" src="wpe79360.jpg" width="369" height="400"></p>
+<p><font size="5">Applications</font><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+
+<ul>
+  <li><font size="4">Connect multiple sources to a single destination</font></li>
+  <li><font size="4">Parallel-to-serial conversion</font></li>
+  <li><font size="4">Combinational shifter</font></li>
+  <li><font size="4">General-purpose combinational function generator</font></li>
+</ul>
+
+<ul>
+    <li><font size="4">Example:&nbsp; <font face="Courier New">Use an 8×1 MUX to implement the majority
+      function</font></font></li>
+</ul>
+<p>&nbsp;</p>
+
+<ul>
+    <li><font size="4">Example:<font face="Courier New"> <span lang="EN-US" style="color: black; mso-color-index: 0; mso-ansi-language: EN-US">Implement
+      function</span></font></font></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;<font face="Courier New" size="4"><span style="color: black; mso-color-index: 0; mso-ansi-language: EN-US" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+y(s2,s1,s0)= s2's1's0 + s2's1s0' + s2s1's0' + s2s1's0</span></font></p>
+<p:colorscheme
+ colors="#000000,#FFFFCC,#5F5F5F,#FFCC00,#FF7C80,#990099,#FF3399,#9933FF"/>
+<hr>
+<p><font face="Lucida Calligraphy"><a href="msi_modules.html">Back</a></font></p>
+
+<p>&nbsp;</p>
+
+</body>
+
+</html>

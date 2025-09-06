@@ -1,0 +1,133 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Static Random Access Memory</title>
+</head>
+
+<body>
+
+<p><b><font size="5" face="Copperplate Gothic Bold"><span style="mso-bidi-font-size: 10.0pt">Memory
+Made of Flip-Flops [Static RAM]</span></font></b></p>
+
+<ul>
+  <li><font size="5">Number of Address Bits &lt;=&gt; Number of Address Lines</font></li>
+  <li><font size="5">Number of Bits / Memory Word &lt;=&gt; Number of Data Lines</font></li>
+  <li><font size="5">An Example</font>
+    <ul>
+      <li><font size="5">a very small memory made from flip-flops</font></li>
+      <li><font size="5">one flip-flop per bit</font></li>
+      <li><font size="5">4 memory word with 3 bits per word ( 4 X 3)</font></li>
+      <li><font size="5">2 address lines and 3 data input lines and 3 data
+        output lines</font></li>
+    </ul>
+  </li>
+</ul>
+<p align="center"><img border="0" src="mem1.jpg" width="237" height="226"></p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="left"><img border="0" src="mem2.jpg" width="773" height="900"></p>
+<blockquote>
+  <ul>
+    <li>
+      <p align="left"><font size="5">Address lines: A<sub>1</sub>A<sub>0</sub></font></li>
+    <li>
+      <p align="left"><font size="5">Data input lines: I<sub>2</sub>I<sub>1</sub>I<sub>0</sub>
+      (</font><font size="4">writing</font><font size="5">)</font></li>
+    <li>
+      <p align="left"><font size="5">Data output lines: O<sub>2</sub>O<sub>1</sub>O<sub>0</sub>
+      (</font><font size="4">reading</font><font size="5">)</font></li>
+    <li>
+      <p align="left"><font size="5">CS - Chip Select ( </font><font size="4">CS
+      = 1 to select, CS = 0 to disable the memory chip</font><font size="5">)</font></li>
+    <li>
+      <p align="left"><font size="5">RD - ReaD ( </font><font size="4">RD = 1 to
+      read, RD = 0 to write</font><font size="5">)</font></li>
+    <li>
+      <p align="left"><font size="5">OE - Output Enable (</font><font size="4">OE
+      = 1 to allow output, OE = 0 output all 0</font><font size="5">)</font></li>
+    <li>
+      <p align="left"><font size="5">Tri-state gates (high, low, high-impedance)</font>
+      <ul>
+        <li>
+          <p align="left"><font size="5">noninvertable buffer</font></li>
+      </ul>
+      <p align="left">&nbsp;&nbsp; <font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      high-impedance:&nbsp; control = 0</font></p>
+      <p align="center"><img border="0" src="mem3.jpg" width="199" height="155">
+      <ul>
+        <li>
+          <p align="left"><font size="5">invertable buffer</font></li>
+      </ul>
+    </li>
+  </ul>
+</blockquote>
+<p align="center"><img border="0" src="mem4.jpg" width="194" height="149"></p>
+<ul>
+  <li><font size="5">Memory Expansion</font>
+    <ul>
+      <li><font size="5">How to obtain a larger size memory from several smaller
+        ones?</font></li>
+    </ul>
+    <p>&nbsp;&nbsp; <font size="5">&nbsp;&nbsp;&nbsp;&nbsp; e.g.,&nbsp;&nbsp;
+    Given 4 X 3 memory chips, to build a 4 X 6, a 4 X 9, an 8 X 3, an&nbsp;</font></p>
+    <p>&nbsp;&nbsp;&nbsp;<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    8 X 6,
+    ......</font></p>
+    <p>&nbsp;
+    <ul>
+      <li><font size="5">Available memory chips</font></li>
+    </ul>
+    <p><img border="0" src="mem5.jpg" width="800" height="470"></p>
+    <p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- memory chip
+    sizes are usually quoted in bits (not bytes)</font></p>
+    <p>&nbsp;&nbsp; <font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- (a): CS -
+    Chip Select, WE - Write Enable, OE - Output Enable</font></p>
+    <p>&nbsp;&nbsp; <font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -- (b): RAS -
+    Row Address Strobe, CAS -- Column Address Strobe</font></p>
+    <p>&nbsp;
+    <ul>
+      <li><font size="5">Build a 32-bit memory</font>
+        <ul>
+          <li><font size="5">using (a)</font></li>
+          <li><font size="5">using (b)</font></li>
+        </ul>
+      </li>
+    </ul>
+    <p>&nbsp;
+    <p><b><font size="5" face="Copperplate Gothic Bold"><span style="mso-bidi-font-size: 10.0pt">Static
+    RAMs vs. Dynamic RAMs</span></font></b></p>
+        <table border="1" cellspacing="3" width="70%" height="74">
+          <tr>
+            <td width="50%" height="19" align="center">
+              <p align="center"></td>
+            <td width="77%" height="19" align="center"><b>Basic building block</b></td>
+            <td width="23%" height="19" align="center"><b>Speed</b></td>
+            <td width="27%" height="19" align="center"><b>Density</b></td>
+            <td width="27%" height="19" align="center"><b>Application</b></td>
+          </tr>
+          <tr>
+            <td width="50%" height="12" align="center"><i>Static RAMs</i></td>
+            <td width="77%" height="12" align="center">flip-flops</td>
+            <td width="23%" height="12" align="center">faster</td>
+            <td width="27%" height="12" align="center">lower</td>
+            <td width="27%" height="12" align="center">Cache</td>
+          </tr>
+          <tr>
+            <td width="50%" height="19" align="center"><i>Dynamic RAMs</i></td>
+            <td width="77%" height="19" align="center">transistor + capacitor</td>
+            <td width="23%" height="19" align="center">slower</td>
+            <td width="27%" height="19" align="center">higher</td>
+            <td width="27%" height="19" align="center">Main Memory</td>
+          </tr>
+        </table>
+        <p>&nbsp;
+  </li>
+</ul>
+
+</body>
+
+</html>
